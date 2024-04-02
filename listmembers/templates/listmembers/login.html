@@ -7,18 +7,26 @@
 
 {% block body %}
 
-<span>
-    Login
-</span>
-<form>
+{% block formlogin %}
+
+<h2>Login</h2>
+
+<form action="{% url 'page-login' %}" method="post">
+    {% csrf_token %}
     <label>
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Usuário" name="usuario">
     </label>
 
     <label>
-        <input type="Senha" placeholder="Senha">
+        <input type="password" placeholder="Senha" name="senha">
     </label>
+    <button type="submit">Entrar</button>
 
 </form>
+
+{% endblock formlogin %}
+
+<a href="{% url 'page-esqueciMinhaSenha' %}">Esqueci a Senha</a>
+<p>Crie uma conta! <a href="{% url 'page-cadastreSe' %}">Cadastre-Se</a></p>
 
 {% endblock body %}
