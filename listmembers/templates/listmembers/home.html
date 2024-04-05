@@ -1,1 +1,8 @@
 página home
+
+<br>
+<br>
+<!--<button><a href="{% url 'page-logout' %}">Encerrar sessão</a></button>-->
+<form action="{% url 'page-logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Encerrar sessão</button>
