@@ -1,21 +1,43 @@
 from django.db import models
 
 
-class Morador(models.Model):
-    primeiroNome = models.CharField("nome", max_length=50)
-    ultimoNome = models.CharField("sobrenome", max_length=50)
-    usuario = models.CharField(max_length=50)
-    senha = models.CharField(max_length=50)
+class Negocios(models.Model):
+    TIPO_DE_NEGOCIO_CHOICES = (
+        ('servico', 'Prestador de Serviço'),
+        ('comercio', 'Comércio'),
+    )
+
+    CATEGORIA_CHOICES = (
+        ('limpeza', 'Limpeza'),
+        ('manutencao', 'Manutenção'),
+        ('restaurante', 'Restaurante'),
+        ('informatica', 'Informática'),
+        ('beleza', 'Beleza'),
+        ('moda', 'Moda'),
+        ('alimentacao', 'Alimentação'),
+        ('indefinido', 'Indefinido'),
+        ('papelaria', 'Papelaria'),
+    )
+
+    TIPO_DE_CONTATO = (
+        ('wpp e atende', 'WhatsApp/Atende ligações'),
+        ('wpp e nao atende', 'WhatsApp/Não atende ligações'),
+        ('chamada', 'Somente ligações'),
+    )
+
+    tipo_negocio = models.CharField(
+        max_length=21, choices=TIPO_DE_NEGOCIO_CHOICES, default='Indefinido')
+    nome = models.CharField(max_length=50)
+    endereco = models.CharField(max_length=100)
+    contato_telefonico = models.CharField(max_length=15)
+    tipo_de_contato = models.CharField(
+        max_length=50, choices=TIPO_DE_CONTATO, default='Somente ligações')
     email = models.EmailField()
-
-    def __str__(self):
-        return self.usuario
-
-
-class Prestador(models.Model):
-    nomeRazaoSocial = models.CharField("nome/Razão Social", max_length=100)
-    email = models.EmailField()
-    telefone = models.CharField(max_length=15)
+    descricao = models.TextField()
+    endereco_site = models.URLField(blank=True, null=True)
+    categoria = models.CharField(
+        max_length=20, choices=CATEGORIA_CHOICES, default='Prestador de Serviço')
+    avaliacao = models.FloatField(blank=True, null=True)
 
     def __str__(self):
         return self.nome
