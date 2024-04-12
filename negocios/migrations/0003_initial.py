@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ("listmembers", "0002_delete_morador_delete_prestadordeservico"),
+        ("negocios", "0002_delete_morador_delete_prestadordeservico"),
     ]
 
     operations = [

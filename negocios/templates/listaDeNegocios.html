@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+Olá {{ user.username }}!
+<h3>Negócios indicados</h3>
+<ul>
+    {% for i in negocios %}
+    {{ i.nome }}
+    <!-- Adicione outras mensagens de depuração aqui -->
+    {% empty %}
+    <li>Nenhum negócio encontrado</li>
+    {% endfor %}
+</ul>
+<br>
+<form action="{% url 'home' %}" method="get">
+    {% csrf_token %}
+    <button type="submit">Home</button>
+</form>
+<br>
+<form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Encerrar sessão</button>
+</form>
+{% else %}
+<p>Você não está logado</p>
+<a href="{% url 'login' %}">Entrar</a>
+<a href="{% url 'signup' %}">Cadastre-se</a>
+<p><a href="{% url 'password_reset' %}">Esqueci minha senha</a></p>
+{% endif %}
+{% endblock %}

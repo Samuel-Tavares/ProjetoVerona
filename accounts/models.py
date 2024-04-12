@@ -4,6 +4,7 @@ from django.db import models
 
 class CustomUser(AbstractUser):
     pass
+    full_name = models.CharField(max_length=150, blank=True, null=True)
     # add additional fields in here
 
     def __str__(self):

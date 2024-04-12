@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     "accounts",
-    "listmembers",
+    "negocios",
 ]
 
 AUTH_USER_MODEL = "accounts.CustomUser"
@@ -137,5 +137,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "lista_negocios"
 LOGOUT_REDIRECT_URL = "home"

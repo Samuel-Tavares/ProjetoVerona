@@ -4,15 +4,21 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-Hi {{ user.username }}!
+Olá {{ user.username }}!
+<form action="{% url 'lista_negocios' %}" method="get">
+    {% csrf_token %}
+    <br>
+    <button type="submit">Encontre um serviço</button>
+</form>
+<br>
 <form action="{% url 'logout' %}" method="post">
     {% csrf_token %}
-    <button type="submit">Log Out</button>
+    <button type="submit">Encerrar Sessão</button>
 </form>
 {% else %}
-<p>You are not logged in</p>
-<a href="{% url 'login' %}">Log In</a> |
-<a href="{% url 'signup' %}">Sign Up</a>
-<p><a href="{% url 'password_reset' %}">Password Reset</a></p>
+<p>Inicie uma sessão!</p>
+<a href="{% url 'login' %}">Entrar</a> |
+<a href="{% url 'signup' %}">Cadastre-se</a>
+<p><a href="{% url 'password_reset' %}">Esqueci Minha Senha</a></p>
 {% endif %}
 {% endblock %}

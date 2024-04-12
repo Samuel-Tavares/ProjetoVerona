@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Negocios(models.Model):
+class Negocio(models.Model):
     TIPO_DE_NEGOCIO_CHOICES = (
         ('servico', 'Prestador de Serviço'),
         ('comercio', 'Comércio'),
