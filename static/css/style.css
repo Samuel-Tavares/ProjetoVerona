@@ -1,3 +1,66 @@
-input {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #900;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #900;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #900;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.additional-links {
+    text-align: center;
+}
+
+.additional-links a {
+    color: #900;
+    text-decoration: none;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
 }
