@@ -2,6 +2,11 @@
 
 {% block title %}Home{% endblock %}
 
+{% block css %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/style.css">
+{% endblock %}
+
 {% block content %}
 {% if user.is_authenticated %}
 Olá {{ user.username }}!
@@ -15,10 +20,17 @@ Olá {{ user.username }}!
     {% csrf_token %}
     <button type="submit">Encerrar Sessão</button>
 </form>
+
 {% else %}
-<p>Inicie uma sessão!</p>
-<a href="{% url 'login' %}">Entrar</a> |
-<a href="{% url 'signup' %}">Cadastre-se</a>
-<p><a href="{% url 'password_reset' %}">Esqueci Minha Senha</a></p>
+
+<div class="home-container-else">
+    <div class="mensagem-titulo">
+        <p>Você não está logado!</p>
+    </div>
+    <div class="links-home-else">
+        <a href="{% url 'login' %}">Entrar</a> |
+        <a href="{% url 'signup' %}">Cadastre-se</a>
+    </div>
+</div>
 {% endif %}
 {% endblock %}

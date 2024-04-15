@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Log In{% endblock %}
+{% block title %}Entrar{% endblock %}
 
 {% block content %}
 <div class="login-container">
-    <form class="login-form" method="post">
+    <form class="formulario-login" method="post">
         {% csrf_token %}
-        <h2>Entrar</h2>
+        <h1>VERONA | INDICA</h1>
+        <h2>ENTRAR</h2>
         <div class="form-group">
             <label for="username">Usuário</label>
             <input type="text" id="username" name="username" required>
@@ -19,10 +20,10 @@
             <button type="submit">Entrar</button>
         </div>
     </form>
-    <div class="additional-links">
-        <a href="{% url 'signup' %}">Esqueci minha senha</a>
+    <div class="links-adicionais">
+        <a href="{% url 'password_reset' %}">Esqueci minha senha</a>
         <span> | </span>
-        <a href="{% url 'signup' %}">Registrar</a>
+        <a href="{% url 'signup' %}">Registre-se</a>
     </div>
 </div>
 {% endblock %}
