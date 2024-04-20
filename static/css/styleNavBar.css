@@ -1,0 +1,16 @@
+.border:hover {
+    background-color: #b1b1b18a;
+    /* Cor de fundo destacada */
+}
+
+.home-container-else {
+    text-align: center;
+    padding: 180px auto;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 100px auto
+}
+
+.container {
+    margin-bottom: 100px
+}

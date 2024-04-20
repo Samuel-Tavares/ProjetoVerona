@@ -129,3 +129,7 @@ a {
     border: 2px solid #000000;
     background-color: #a81616;
 }
+
+.nao_esta_logado {
+    text-align: center;
+}

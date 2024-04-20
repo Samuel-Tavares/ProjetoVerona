@@ -26,7 +26,7 @@ class Negocio(models.Model):
     )
 
     tipo_negocio = models.CharField(
-        max_length=21, choices=TIPO_DE_NEGOCIO_CHOICES, default='Indefinido')
+        max_length=21, choices=TIPO_DE_NEGOCIO_CHOICES, default='Prestador de serviço')
     nome = models.CharField(max_length=50)
     endereco = models.CharField(max_length=100)
     contato_telefonico = models.CharField(max_length=15)
@@ -36,7 +36,7 @@ class Negocio(models.Model):
     descricao = models.TextField()
     endereco_site = models.URLField(blank=True, null=True)
     categoria = models.CharField(
-        max_length=20, choices=CATEGORIA_CHOICES, default='Prestador de Serviço')
+        max_length=20, choices=CATEGORIA_CHOICES, default='Indefinido')
     avaliacao = models.FloatField(blank=True, null=True)
 
     def __str__(self):
