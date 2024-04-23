@@ -11,6 +11,25 @@
     margin: 100px auto
 }
 
-.container {
-    margin-bottom: 100px
+.custom-form {
+    margin: 5px auto;
+}
+
+#Campo-busca {
+    padding: 20px;
+    margin-left: -10px;
+}
+
+#Campo-busca label {
+    margin-bottom: 5px;
+
+}
+
+#Campo-busca button {
+    margin-top: 10px;
+}
+
+#titulo-indicados {
+    text-align: center;
+    padding: 10px;
 }
