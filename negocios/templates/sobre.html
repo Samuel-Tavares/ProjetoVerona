@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+
 {% if user.is_authenticated %}
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded" style="margin: 2px;">
@@ -20,16 +21,16 @@
                 <i class="bi bi-building" style="margin: 3px;"></i>
                 Verona | Indica</a>
         </div>
-        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 10px;">
-            <span class="navbar-toggler-icon" style="margin: 3px;"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <div class="navbar-nav">
-                <a href=" {% url 'index' %}" class="nav-link {% if request.path == '/' %}active{% endif %}">
+            <div class="navbar-nav" style="margin: 10px;">
+                <a href="{% url 'index' %}" class="nav-link {% if request.path == '/' %}active{% endif %}">
                     Início</a>
                 <a href="{% url 'lista_negocios' %}"
-                    class="nav-link {% if request.path == 'lista_negocios' %}active{% endif %}">
+                    class="nav-link {% if request.path == '/negocios/contatos/' %}active{% endif %}">
                     Lista de indicados</a>
                 <a href="{% url 'sobre' %}"
                     class="nav-link {% if request.path == '/negocios/sobre/' %}active{% endif %}">
@@ -48,7 +49,6 @@
     </div>
 </nav>
 
-
 {% else %}
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded sticky-top" style="margin: 2px;">
     <div class="container-fluid">
@@ -62,9 +62,10 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 10px;">
             <span class="navbar-toggler-icon" style="margin: 3px;"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between ms-auto" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <div class="navbar-nav">
-                <a href="#" class="nav-link {% if request.path == '' %}active{% endif %}">
+                <a href="{% url 'sobre' %}"
+                    class="nav-link {% if request.path == '/negocios/sobre/' %}active{% endif %}">
                     Sobre</a>
             </div>
         </div>
@@ -77,14 +78,25 @@
     </div>
 </nav>
 
-<div class="home-container-else">
-    <div class="container-fluid">
-        <p>Você não está logado!</p>
-    </div>
-</div>
+
+
 {% endif %}
 
-<footer class="p-4 bg-dark text-light text-center fixed-bottom py-3">
+<div class="container mt-5">
+    <p class="lead">A plataforma <b>"Verona | Indica"</b> é um projeto universitário e sem fins lucrativos
+        que surgiu com a motivação de promover uma melhor qualidade de vida aos usuários, tornando fácil a
+        procura por serviços indicados pelos condôminos. Ela ajuda os grandes, médios e pequenos empreendedores,
+        além de promover a inclusão digital da comunidade. </p>
+    </p>
+</div>
+
+<div>
+    <br>
+    <br>
+    <br>
+</div>
+
+<footer class="p-4 bg-dark text-light text-center py-3 fixed-bottom">
     Desenvolvido por Samuel Oliveira
 </footer>
 

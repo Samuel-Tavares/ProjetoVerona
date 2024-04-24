@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.paginator import Paginator
 from django.views.generic import ListView
 from .models import Negocio
+from django.contrib.auth.decorators import login_required
 
 
 class ListaNegociosViews(ListView):
@@ -32,5 +33,11 @@ class ListaNegociosViews(ListView):
         context['categorias'] = Negocio.CATEGORIA_CHOICES
         context['tipos_negocio'] = Negocio.TIPO_DE_NEGOCIO_CHOICES
         context['negocios'] = page_obj
-        
+
         return context
+
+
+def sobre_view(request):
+    template_name = 'sobre.html'
+
+    return render(request, template_name)

@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('sua-imagem-de-fundo.jpg');
     background-size: cover;
     background-position: center;
     color: #000000;
@@ -25,7 +24,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #a81616;
+    background-color: #0077ff;
     color: rgb(255, 255, 255);
     font-size: 16px;
     cursor: pointer;
@@ -33,7 +32,7 @@ body {
 }
 
 .card button:hover {
-    background-color: rgba(173, 13, 13, 0.719);
+    background-color: rgb(46, 118, 177);
     color: #000000;
 }
 
@@ -53,10 +52,10 @@ body {
 .form-group input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 2px solid #a81616;
+    border: 2px solid #000000;
     border-radius: 5px;
     font-size: 16px;
-    background-color: rgba(211, 72, 72, 0.089);
+    background-color: rgba(18, 74, 177, 0.171);
     color: #000000;
 }
 
@@ -67,7 +66,7 @@ body {
 }
 
 .text-center a {
-    color: #a81616;
+    color: #0479ff;
     text-decoration: none;
 }
 
@@ -77,7 +76,7 @@ body {
 
 .card h1 {
     margin-bottom: 40px;
-    color: #a81616;
+    color: #000000;
     text-align: center;
     font-size: 35px;
     font-weight: bold;
@@ -86,7 +85,7 @@ body {
 
 .card h2 {
     margin-bottom: 40px;
-    color: #a81616;
+    color: #000000;
     text-align: center;
     font-size: 25px;
     font-weight: bold;

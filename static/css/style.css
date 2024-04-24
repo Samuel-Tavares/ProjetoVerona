@@ -21,7 +21,7 @@ body {
 
 .formulario-login h1 {
     margin-bottom: 40px;
-    color: #a81616;
+    color: #000000;
     text-align: center;
     font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.466);
@@ -30,7 +30,7 @@ body {
 
 .formulario-login h2 {
     margin-bottom: 40px;
-    color: #a81616;
+    color: #000000;
     text-align: center;
     font-size: 25px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.466);
@@ -52,10 +52,10 @@ body {
 .form-group input[type="password"] {
     width: 94%;
     padding: 10px;
-    border: 2px solid #a81616;
+    border: 2px solid #000000;
     border-radius: 5px;
     font-size: 16px;
-    background-color: rgba(211, 72, 72, 0.089);
+    background-color: rgba(18, 74, 177, 0.171);
     color: #000000;
 }
 
@@ -64,7 +64,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #a81616;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     font-size: 16px;
     cursor: pointer;
@@ -72,7 +72,7 @@ body {
 }
 
 .form-group button:hover {
-    background-color: rgba(173, 13, 13, 0.719);
+    background-color: rgba(0, 0, 0, 0.349);
     color: #000000;
 }
 
@@ -82,7 +82,7 @@ body {
 
 .links-adicionais a,
 span {
-    color: #a81616;
+    color: #0071f3;
     text-decoration: none;
 }
 
