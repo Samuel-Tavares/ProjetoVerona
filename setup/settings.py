@@ -15,10 +15,6 @@ from decouple import config
 from dj_database_url import parse as db_url
 from decouple import Csv
 import os
-from dotenv import load_dotenv
-load_dotenv()
-
-
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -137,8 +133,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(
-    BASE_DIR, 'staticfiles_build', 'static', 'staticfiles')
 
 
 # Default primary key field type
