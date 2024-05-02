@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
-CSRF_ORIGINS = config('CSRF_TOKEN')
+CSRF_TRUSTED_ORIGINS = ['https://projetoverona-production.up.railway.app']
 
 # Application definition
 
