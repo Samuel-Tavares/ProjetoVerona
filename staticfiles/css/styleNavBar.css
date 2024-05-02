@@ -1,0 +1,35 @@
+.border:hover {
+    background-color: #b1b1b18a;
+    /* Cor de fundo destacada */
+}
+
+.home-container-else {
+    text-align: center;
+    padding: 180px auto;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 100px auto
+}
+
+.custom-form {
+    margin: 5px auto;
+}
+
+#Campo-busca {
+    padding: 20px;
+    margin-left: -10px;
+}
+
+#Campo-busca label {
+    margin-bottom: 5px;
+
+}
+
+#Campo-busca button {
+    margin-top: 10px;
+}
+
+#titulo-indicados {
+    text-align: center;
+    padding: 10px;
+}

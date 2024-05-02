@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('sua-imagem-de-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff
+}
+
+.login-container {
+    width: 75%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+    background-color: rgb(255, 255, 255);
+}
+
+.formulario-login h1 {
+    margin-bottom: 40px;
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.466);
+}
+
+
+.formulario-login h2 {
+    margin-bottom: 40px;
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.466);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #050505;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(18, 74, 177, 0.171);
+    color: #000000;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: #000000;
+}
+
+.links-adicionais {
+    text-align: center;
+}
+
+.links-adicionais a,
+span {
+    color: #0071f3;
+    text-decoration: none;
+}
+
+.links-adicionais a:hover {
+    text-decoration: underline;
+}
+
+.mensagem-titulo {
+    margin-bottom: 40px;
+    color: #a81616;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.466);
+    font-weight: bold;
+}
+
+.home-container-else {
+    text-align: center;
+    width: 75%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+    background-color: rgb(255, 255, 255);
+}
+
+.links-home-else,
+a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.links-home-else a:hover {
+    color: #4782c7;
+}
+
+.links-home-else {
+    border-bottom: #000000;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background-color: #a81616;
+}
+
+.nao_esta_logado {
+    text-align: center;
+}
