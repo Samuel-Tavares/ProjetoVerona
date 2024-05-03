@@ -35,6 +35,7 @@ class Negocio(models.Model):
     email = models.EmailField()
     descricao = models.TextField()
     endereco_site = models.URLField(blank=True, null=True)
+    whatsappContato = models.URLField(blank=True, null=True)
     categoria = models.CharField(
         max_length=20, choices=CATEGORIA_CHOICES, default='Indefinido')
     avaliacao = models.FloatField(blank=True, null=True)
