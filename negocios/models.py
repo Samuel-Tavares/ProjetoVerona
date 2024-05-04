@@ -32,10 +32,10 @@ class Negocio(models.Model):
     contato_telefonico = models.CharField(max_length=15)
     tipo_de_contato = models.CharField(
         max_length=50, choices=TIPO_DE_CONTATO, default='Somente ligações')
-    email = models.EmailField()
+    email = models.EmailField(blank=True, null=True)
     descricao = models.TextField()
     endereco_site = models.URLField(blank=True, null=True)
-    whatsappContato = models.URLField(blank=True, null=True)
+    whatsappContato = models.CharField(blank=True, null=True)
     categoria = models.CharField(
         max_length=20, choices=CATEGORIA_CHOICES, default='Indefinido')
     avaliacao = models.FloatField(blank=True, null=True)
