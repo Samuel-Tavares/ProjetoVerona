@@ -35,7 +35,7 @@
                 <a href="{% url 'sobre' %}"
                     class="nav-link {% if request.path == '/negocios/sobre/' %}active{% endif %}">
                     Sobre</a>
-                <a href="#" class="nav-link {% if request.path == '' %}active{% endif %}">
+                <a href="#" class="nav-link disabled {% if request.path == '' %}active{% endif %}">
                     Contato</a>
             </div>
         </div>

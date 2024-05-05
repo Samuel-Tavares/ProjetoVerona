@@ -34,7 +34,7 @@
                 <a href="{% url 'sobre' %}"
                     class="nav-link {% if request.path == '/negocios/sobre/' %}active{% endif %}">
                     Sobre</a>
-                <a href="#" class="nav-link {% if request.path == '' %}active{% endif %}">
+                <a href="#" class="nav-link disabled {% if request.path == '' %}active{% endif %}">
                     Contato</a>
             </div>
         </div>
@@ -107,7 +107,6 @@
 {% endif %}
 
 <footer class="p-4 bg-dark text-light text-center fixed-bottom py-3">
-    Desenvolvido por Samuel Oliveira
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
