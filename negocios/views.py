@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.core.paginator import Paginator
 from django.views.generic import ListView
 from .models import Negocio
-from django.contrib.auth.decorators import login_required
 
 
 class ListaNegociosViews(ListView):
@@ -38,6 +37,6 @@ class ListaNegociosViews(ListView):
 
 
 def sobre_view(request):
-    template_name = 'sobre.html'
+    sobre_plataforma = 'A plataforma "Verona | Indica" é um projeto universitário e sem fins lucrativos que surgiu com a motivação de promover uma melhor qualidade de vida aos usuários, tornando fácil a procura por serviços indicados pelos condôminos. Ela ajuda os grandes, médios e pequenos empreendedores, além de promover a inclusão digital da comunidade.'
 
-    return render(request, template_name)
+    return render(request, 'sobre.html', {'sobre_plataforma': sobre_plataforma})
