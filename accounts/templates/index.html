@@ -48,6 +48,31 @@
     </div>
 </nav>
 
+<div class="container center w-50 p-3 d-flex">
+    <div class="card text-center">
+        <div class=" card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <h5 class="card-title">Aviso</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+
+            <p class="card-text">A plataforma tem como objetivo tornar mais fácil a procura por empreendedores,
+                prestadores de serviço e comerciantes locais que foram indicados por condôminos com base em suas
+                experiências.
+            </p>
+            <p class="card-text">As negociações realizadas entre usuários e prestador de serviço/comércio são de
+                responsabilidade de ambas as partes, a plataforma não possui acesso às conversas e não possui parte
+                financeira com os contatos listados.
+            </p>
+            <p><b>Acesse abaixo nossa lista de indicados:</b></p>
+            <a href="{% url 'lista_negocios'%}" class="btn btn-primary">Indicações</a>
+        </div>
+    </div>
+</div>
+
 
 {% else %}
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded sticky-top" style="margin: 2px;">
@@ -64,7 +89,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between ms-auto" id="navbarNav">
             <div class="navbar-nav">
-                <a href="#" class="nav-link {% if request.path == '' %}active{% endif %}">
+                <a href="{% url 'sobre' %}" class="nav-link {% if request.path == '' %}active{% endif %}">
                     Sobre</a>
             </div>
         </div>
