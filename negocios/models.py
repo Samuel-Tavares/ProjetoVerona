@@ -28,7 +28,7 @@ class Negocio(models.Model):
     tipo_negocio = models.CharField(
         max_length=21, choices=TIPO_DE_NEGOCIO_CHOICES, default='Prestador de serviço')
     nome = models.CharField(max_length=50)
-    endereco = models.CharField(max_length=100)
+    endereco = models.CharField(max_length=100, blank=True, null=True)
     contato_telefonico = models.CharField(max_length=15)
     tipo_de_contato = models.CharField(
         max_length=50, choices=TIPO_DE_CONTATO, default='Somente ligações')
