@@ -17,6 +17,7 @@ class Negocio(models.Model):
         ('alimentacao', 'Alimentação'),
         ('indefinido', 'Indefinido'),
         ('papelaria', 'Papelaria'),
+        ('moveisPlanejados', 'Moveis Planejados'),
     )
 
     TIPO_DE_CONTATO = (
