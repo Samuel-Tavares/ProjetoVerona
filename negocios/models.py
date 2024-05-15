@@ -18,6 +18,16 @@ class Negocio(models.Model):
         ('indefinido', 'Indefinido'),
         ('papelaria', 'Papelaria'),
         ('moveisPlanejados', 'Moveis Planejados'),
+        ('imobiliaria', 'Imobiliária'),
+        ('marcenaria', 'Marcenaria'),
+        ('eventos', 'Eventos'),
+        ('decoracao', 'Decoração'),
+        ('grafica', 'Gráfica'),
+        ('farmacia', 'Farmácia'),
+        ('montagem', 'Montagem'),
+        ('paraSeuPet', 'Para seu pet'),
+        ('entretenimento', 'Entretenimento'),
+        ('seguros', 'Seguros'),
     )
 
     TIPO_DE_CONTATO = (
