@@ -17,6 +17,15 @@
             <label for="password">Senha</label>
             <input type="password" id="password" name="password" required>
         </div>
+
+        {% if form.non_field_errors %}
+        <div class="form-group" id="erroLogin">
+            {% for error in form.non_field_errors %}
+            <small class="text-danger">{{ error }}</small><br>
+            {% endfor %}
+        </div>
+        {% endif %}
+
         <div class="form-group">
             <button type="submit">Entrar</button>
         </div>
