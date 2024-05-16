@@ -40,13 +40,13 @@ class Negocio(models.Model):
     tipo_negocio = models.CharField(
         max_length=21, choices=TIPO_DE_NEGOCIO_CHOICES, default='Prestador de serviço')
     nome = models.CharField(max_length=50)
-    endereco = models.CharField(max_length=100, blank=True, null=True)
+    endereco = models.CharField(max_length=100, blank=True, default='')
     contato_telefonico = models.CharField(max_length=15)
     tipo_de_contato = models.CharField(
         max_length=50, choices=TIPO_DE_CONTATO, default='Somente ligações')
-    email = models.EmailField(blank=True, null=True)
+    email = models.EmailField(blank=True, default='')
     descricao = models.TextField()
-    endereco_site = models.URLField(blank=True, null=True)
+    endereco_site = models.URLField(blank=True, default='')
     whatsappContato = models.CharField(blank=True, null=True)
     categoria = models.CharField(
         max_length=20, choices=CATEGORIA_CHOICES, default='Indefinido')
