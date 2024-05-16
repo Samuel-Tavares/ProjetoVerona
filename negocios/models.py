@@ -28,6 +28,7 @@ class Negocio(models.Model):
         ('paraSeuPet', 'Para seu pet'),
         ('entretenimento', 'Entretenimento'),
         ('seguros', 'Seguros'),
+        ('marmores', 'Mármores'),
     )
 
     TIPO_DE_CONTATO = (
