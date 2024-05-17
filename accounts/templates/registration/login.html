@@ -19,7 +19,7 @@
         </div>
 
         {% if form.non_field_errors %}
-        <div class="form-group" id="erroLogin">
+        <div class="form-group" style="color:red">
             {% for error in form.non_field_errors %}
             <small class="text-danger">{{ error }}</small><br>
             {% endfor %}
