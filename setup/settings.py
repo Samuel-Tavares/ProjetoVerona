@@ -95,7 +95,7 @@ DATABASES = {
     }
 }
 
-DB_LOCAL = False
+DB_LOCAL = True
 if DB_LOCAL == False:
     DATABASES['default'] = dj_database_url.parse(config('DATABASE_URL'))
 
