@@ -30,7 +30,6 @@ class Negocio(models.Model):
         ('seguros', 'Seguros'),
         ('marmores', 'Marmores'),
         ('advocacia', 'Advocacia'),
-        ('teste', 'Teste'),
     )
 
     TIPO_DE_CONTATO = (
