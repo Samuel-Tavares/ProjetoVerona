@@ -17,6 +17,20 @@ class Negocio(models.Model):
         ('alimentacao', 'Alimentação'),
         ('indefinido', 'Indefinido'),
         ('papelaria', 'Papelaria'),
+        ('moveis planejados', 'Moveis Planejados'),
+        ('imobiliaria', 'Imobiliária'),
+        ('marcenaria', 'Marcenaria'),
+        ('eventos', 'Eventos'),
+        ('decoracao', 'Decoração'),
+        ('grafica', 'Grafica'),
+        ('farmacia', 'Farmácia'),
+        ('montagem', 'Montagem'),
+        ('para seu pet', 'Para seu PET'),
+        ('entretenimento', 'Entretenimento'),
+        ('seguros', 'Seguros'),
+        ('marmores', 'Marmores'),
+        ('advocacia', 'Advocacia'),
+        ('teste', 'Teste'),
     )
 
     TIPO_DE_CONTATO = (
